@@ -1,0 +1,14 @@
+<ion-view view-title="添加会话" hide-tabs="true">
+    <ion-content>
+        <div class="list list-inset">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="搜索用户名" ng-model="input.userid">
+            </label>
+            <button class="button button-block button-balanced" ng-click="addChat()">
+                发信息
+            </button>
+            <!--ui-sref="tab.chat-detail({chatId:friend.userName})"-->
+        </div>
+    </ion-content>
+</ion-view>

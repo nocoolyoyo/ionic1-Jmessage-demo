@@ -1,0 +1,21 @@
+<ion-view title="登录">
+    <ion-content  overflow-scroll="false">
+        <div class="login-mian" >
+            <div class="login-content" style="margin-top:100px">
+                <div class="list">
+                    <label class="item item-input">
+                        <span class="input-label">账号</span>
+                        <input type="text" ng-model="input.account">
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">密码</span>
+                        <input type="password" ng-model="input.password">
+                    </label>
+                </div>
+                <button class="button button-block  button-positive " ng-click="login()">
+                    登录
+                </button>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

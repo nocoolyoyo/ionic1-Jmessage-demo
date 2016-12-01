@@ -1,0 +1,14 @@
+<ion-view view-title="好友列表">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-icon icon ion-plus" ui-sref="tab.friends-add">
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="friend in friends track by friend.userID" type="item-text-wrap"  ui-sref="tab.friends-detail({friendId:friend.userID})">
+                <!--<img ng-src="{{friend.face}}">-->
+                <h2>{{friend.nickname}}</h2>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

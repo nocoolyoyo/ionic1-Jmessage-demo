@@ -1,0 +1,14 @@
+<ion-view view-title="群组">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear button-icon icon ion-plus" ui-sref="tab.group-add">
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+                <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="group in groups track by group" type="item-text-wrap"  ui-sref="tab.group-detail({groupId:group})">
+                <!--<img ng-src="{{friend.face}}">-->
+                <h2>{{group}}</h2>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,19 @@
+<ion-view view-title="{{group.groupName}}" hide-tabs="true">
+    <ion-content>
+        <ion-list>
+            <ion-item><span style="float: left">群名</span><span style="float: right">{{group.groupName}}</span></ion-item>
+            <ion-item><span style="float: left">群ID</span><span style="float: right">{{group.groupID}}</span></ion-item>
+            <ion-item><span style="float: left">等级</span><span style="float: right">{{group.groupLevel}}</span></ion-item>
+            <ion-item><span style="float: left">最大成员数</span><span style="float: right">{{group.maxMemberCount}}</span></ion-item>
+            <ion-item><span style="float: left">签名</span><span style="float: right">{{group.groupDescription}}</span></ion-item>
+            <!--<ion-toggle  ng-model="settings.enableFriends">-->
+            <!--Enable Friends-->
+            <!--</ion-toggle>-->
+        </ion-list>
+        <a class="button button-block button-balanced"  ui-sref="tab.chat-detail({chatId:group.groupId})">
+            发信息
+        </a>
+    </ion-content>
+</ion-view>
+
+

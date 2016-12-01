@@ -1,0 +1,19 @@
+<ion-view view-title="{{friend.nickname}}" hide-tabs="true">
+    <ion-content>
+        <ion-list>
+            <ion-item><span style="float: left">头像</span><span style="float: right"></span></ion-item>
+            <ion-item><span style="float: left">账号</span><span style="float: right">{{friend.userName}}</span></ion-item>
+            <ion-item><span style="float: left">昵称</span><span style="float: right">{{friend.nickname}}</span></ion-item>
+            <ion-item><span style="float: left">性别</span><span style="float: right">{{friend.gender}}</span></ion-item>
+            <ion-item><span style="float: left">签名</span><span style="float: right">{{friend.signature}}</span></ion-item>
+            <!--<ion-toggle  ng-model="settings.enableFriends">-->
+            <!--Enable Friends-->
+            <!--</ion-toggle>-->
+        </ion-list>
+        <a class="button button-block button-balanced"  ui-sref="tab.chat-detail({chatId:friend.userName})">
+            发信息
+        </a>
+    </ion-content>
+</ion-view>
+
+
